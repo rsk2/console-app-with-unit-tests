@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordScoreExercise", "WordScoreExercise\WordScoreExercise.csproj", "{2957CC94-475A-4AC9-B7D6-8173915350FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordScoreExerciseUnitTests", "WordScoreExerciseUnitTests\WordScoreExerciseUnitTests.csproj", "{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0976D0B-CB16-482E-837E-D3C72C4E73D7}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WordScoreExercise.vsmdi = WordScoreExercise.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WordScoreExercise.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Debug|x86.ActiveCfg = Debug|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Debug|x86.Build.0 = Debug|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Release|Any CPU.ActiveCfg = Release|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Release|x86.ActiveCfg = Release|x86
+		{2957CC94-475A-4AC9-B7D6-8173915350FB}.Release|x86.Build.0 = Release|x86
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{A7AB139A-7C7E-4AC2-B398-17465A7C1CE8}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
