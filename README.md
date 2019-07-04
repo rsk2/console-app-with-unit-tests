@@ -1,6 +1,6 @@
-In this repository, I solve the Dollar problem using a C# console application. Unit tests are also added to the project. 
+In this repository, I solve the dollar words problem using a C# console application. Unit tests are also added to the project. 
 
-For those of you who don't know the dollar problem:
+For those of you who don't know the dollar words problem - 
 
 Dollar Words:
  
