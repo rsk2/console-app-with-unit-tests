@@ -73,14 +73,10 @@ namespace WordScoreExerciseUnitTests
         [TestMethod()]
         [DeploymentItem("WordScoreExercise.exe")]
         public void ReadInputWordsTest()
-        {
-            
-            String fullAppName = Assembly.GetExecutingAssembly().GetName().CodeBase;
-             String fullAppPath = Path.GetDirectoryName(fullAppName);
-            string path = fullAppPath+ @"\Input\american-words.txt";
-            string localPath = new Uri(path).LocalPath;
+        {          
+            string path = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\..\WordScoreExercise\Data\american-words.txt"));
             string[] actual;
-            actual = Program_Accessor.ReadInputWords(localPath);
+            actual = Program_Accessor.ReadInputWords(path);
             Assert.IsNotNull(actual);
         }
 
@@ -102,14 +98,12 @@ namespace WordScoreExerciseUnitTests
         [DeploymentItem("WordScoreExercise.exe")]
         public void FindWordsWithRequiredScoreTest()
         {
-            string[] words = { "balkanizes", "food" }; // TODO: Initialize to an appropriate value
-            //List<Word_Accessor> inputWords = null; // TODO: Initialize to an appropriate value
-            List<string> wordMatches = new List<string>(); // TODO: Initialize to an appropriate value
-            int requiredScore = 100; // TODO: Initialize to an appropriate value
+            string[] words = { "balkanizes", "food" }; 
+            List<string> wordMatches = new List<string>(); 
+            int requiredScore = 100; 
             Program_Accessor.BuildLetterScoreMapping();        
             Program_Accessor.FindWordsWithRequiredScore(words, wordMatches, requiredScore);
             Assert.AreEqual(wordMatches[0], "balkanizes");
-            //Assert.Inconclusive("A method that does not return a value cannot be verified.");
         }
 
 
@@ -120,11 +114,10 @@ namespace WordScoreExerciseUnitTests
         [DeploymentItem("WordScoreExercise.exe")]
         public void FindWordsWithRequiredZeroScoreTest()
         {
-            string[] words = { "balkanizes", "food" }; // TODO: Initialize to an appropriate value
-            //List<Word_Accessor> inputWords = null; // TODO: Initialize to an appropriate value
+            string[] words = { "balkanizes", "food" }; 
             Program_Accessor.BuildLetterScoreMapping();   
-            List<string> wordMatches = new List<string>(); // TODO: Initialize to an appropriate value
-            int requiredScore = 0; // TODO: Initialize to an appropriate value
+            List<string> wordMatches = new List<string>(); 
+            int requiredScore = 0;
             Program_Accessor.FindWordsWithRequiredScore(words, wordMatches, requiredScore);
             Assert.AreEqual(wordMatches.Count,0);
             

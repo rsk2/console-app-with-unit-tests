@@ -70,7 +70,7 @@ namespace WordScoreExerciseUnitTests
         [TestMethod()]
         public void CalculateScoreTest()
         {
-            Word target = new Word(); // TODO: Initialize to an appropriate value
+            Word target = new Word(); 
             target.WordLetters = "abcd";
             Program_Accessor.BuildLetterScoreMapping();
             target.CalculateScore();

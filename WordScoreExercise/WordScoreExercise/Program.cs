@@ -10,7 +10,6 @@ The input file american-words.txt is attached.
 Using a C# console application, give each letter in each word a numerical value equal to its position \
 in the alphabet.  So "a" is 1 and "z" is 26.  Punctuation and whitespace is 0.  
 Find words where the sum of the value of the letters is 100 and print each of the “100” words on the console. 
-Include unit tests if you have time.   
      */
 
 namespace WordScoreExercise
@@ -23,7 +22,7 @@ namespace WordScoreExercise
             requiredScore = GetRequiredScore();
             List<string> wordMatches = new List<string>();
             string[] words;
-            string path = Path.Combine(Directory.GetCurrentDirectory(), @"Input\american-words.txt");
+            string path = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), @"..\..\Data\american-words.txt"));
             words = ReadInputWords(path);
             if (words != null)
             {
@@ -32,7 +31,6 @@ namespace WordScoreExercise
                 PrintMatchedWords(wordMatches);
             }
             Console.ReadLine();
-
         }
 
         private static int GetRequiredScore()
@@ -47,8 +45,7 @@ namespace WordScoreExercise
         private static string[] ReadInputWords(string fileLocation)
         {
             string[] words;
-
-            
+           
             try
             {
                 words = File.ReadAllLines(fileLocation);
