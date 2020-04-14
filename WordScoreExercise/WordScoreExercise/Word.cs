@@ -38,7 +38,6 @@ namespace WordScoreExercise
                 score += AlphabetScores[wordLetter];
             }
             this._wordScore = score;
-            //return score;
         }
 
     }
